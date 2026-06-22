@@ -9,6 +9,7 @@
   background: #f7f7f7;
   position: relative;
   display: block;
+  cursor: pointer;
 
   img {
     position: absolute;
@@ -35,4 +36,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    width: 45%;
+    max-width: 45%;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    width: 90%;
+    max-width: 90%;
+    background: transparent;
+  }
 }
+
