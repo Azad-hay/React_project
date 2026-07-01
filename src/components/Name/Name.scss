@@ -1,0 +1,16 @@
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    .name-host{
+        font-size: 18px;
+    }
+
+    .host-img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+
+}

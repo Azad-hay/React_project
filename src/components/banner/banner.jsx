@@ -12,7 +12,7 @@ const Banner = (props) => {
         <div className='banner'>
             <div className='banner-content'>
                 <img src={image} alt={alt} className='banner-image' />
-                {props.title === true && <div className='banner-overlay' />}
+                <div className='banner-overlay' />
                 {props.title === true && <h1 className='banner-text'>{titre}</h1>}
             </div>
         </div>
