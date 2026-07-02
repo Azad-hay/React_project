@@ -36,12 +36,14 @@ const Logements = () => {
           <Tag key={index} tag={tag} className='tag' />
           )) }
         </div>
-        <div className='stars'>
-          {Array.from({ length: 5 }, (_, index) => (
-          <Star key={index} active={index < Number(logement.rating)} />
-          ))}
+        <div className='host-info'>
+          <div className='stars'>
+            {Array.from({ length: 5 }, (_, index) => (
+            <Star key={index} active={index < Number(logement.rating)}  className='star'/>
+            ))}
+          </div>
+          <Name name={logement.host.name} picture={logement.host.picture} />
         </div>
-        <Name name={logement.host.name} picture={logement.host.picture} />
         <div className='collapse-container'>
         <Collapse title='Description' content={logement.description} className='description-collapse collapse' />
         <Collapse title='Équipements' content={<ListEquipement />} className='equipement-collapse collapse' />

@@ -1,13 +1,21 @@
 
+.collapse {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
     .collapse-header {
         display: flex;
         align-items: center;
+        position: relative;
         justify-content: space-between;
         width: 100%;
         padding: 10px 20px;
         background-color: #FF6060;
         border-radius: 5px;
         z-index: 1;
+        box-sizing: border-box;
 
         h3 {
             font-size: 24px;
@@ -23,7 +31,7 @@
         }
 
         .arrow {
-            transform: rotate(0deg);
+            transform: rotate(180deg);
         }
 
         .arrow.open {
@@ -45,9 +53,10 @@
         z-index: 0;
         overflow: hidden;
         font-size: 18px;
+        box-sizing: border-box;
     }
 
-    .collapse-content.closed-initial{
+    .collapse-content.closed-initial {
         height: 0;
         padding: 0 20px;
         opacity: 0;
@@ -60,25 +69,24 @@
     .collapse-content.hidden {
         animation: collapseClose 0.2s ease forwards;
     }
+}
 
 
 @keyframes arrowOpen {
     from {
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
     to {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
     }
 }
 
-
 @keyframes arrowClose {
-
     from {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
 }
 @keyframes collapseOpen {

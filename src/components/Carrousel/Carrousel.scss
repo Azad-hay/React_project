@@ -67,11 +67,23 @@
     }
 
     @media only screen and (max-width: 480px) {
-      height: 240px;
+      height: 220px;
+
+      .carrousel-image-container {
+        button {
+          padding: 4px;
+
+          img {
+            top: 50%;
+            transform: translateY(50%);
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
 
       .carrousel-counter {
-        font-size: 12px;
-        bottom: 6px;
+        display: none;
       }
     }
 }
