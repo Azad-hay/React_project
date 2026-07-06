@@ -55,7 +55,7 @@ $main-color:#FF6060;
       font-size: 18px;
       box-sizing: border-box;
       
-        .collapse {
+        .collapse-header {
          border-radius: 15px;
         }
 
@@ -102,7 +102,6 @@ $main-color:#FF6060;
         font-size: 18px;
         font-weight: 500;
         flex-wrap: wrap;
-
       }
     }
 
@@ -119,17 +118,26 @@ $main-color:#FF6060;
         height: 36px;
         width: 36px;
       }
-
-    }
-   
-    
+    }   
   }
 
-  
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .logement-content {
+
+      .title-logement{
+        width: 80%;
+        height: auto;
+        line-height: 0.9;
+        
+
+      }
       .tags {
-        margin-top: 150px;
+        margin-top: 180px;
+        
+      }
+      .collapse {
+        margin-top: 40px;
       }
     }
   }
@@ -148,15 +156,14 @@ $main-color:#FF6060;
           margin-top: 0;
           text-align: left;
           line-height: 1.2;
-          width: 100%;
-          overflow-wrap: anywhere;
+          width: 100%;         
           word-break: break-word;
           
           .title-logement {
-            font-size: 24px;
+            font-size: 24px;            
             margin: 0;
+            height: auto;
             white-space: normal;
-            overflow-wrap: anywhere;
             word-break: break-word;
           }
           

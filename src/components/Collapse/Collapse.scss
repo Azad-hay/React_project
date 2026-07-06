@@ -12,10 +12,11 @@
         justify-content: space-between;
         width: 100%;
         padding: 10px 20px;
-        background-color: #FF6060;
-        border-radius: 5px;
+        background-color: #FF6060;        
         z-index: 1;
+        border-radius: 5px;
         box-sizing: border-box;
+       
 
         h3 {
             font-size: 24px;
@@ -48,7 +49,6 @@
         padding: 10px 20px;
         background-color: #F6F6F6;
         margin-top: -2px;
-        border-radius: 0 0 5px 5px;
         font-size: 16px;
         z-index: 0;
         overflow: hidden;
