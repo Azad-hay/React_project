@@ -41,9 +41,11 @@ const Carrousel = ({ pictures }) => {
           </>
         )}
       </div>
-      <div className='carrousel-counter'>
+      {pictures.length > 1 && (
+        <div className='carrousel-counter'>
         {currentIndex + 1}/{pictures.length}
       </div>
+      )}
     </div>
   )
 }
